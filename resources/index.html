@@ -38,14 +38,15 @@
 
 
     <!-- Index / Table of Contents -->
+   <!-- Index / Table of Contents -->
     <div class="page-grid">
     <nav id="toc" class="toc-panel" aria-labelledby="toc-heading" aria-label="On this page">
-
       <h2 id="toc-heading">Index</h2>
       <ul>
         <li><a href="#code">Source Code</a>
           <ul>
-            <li><a href="#code-core">FastParam Core Repository</a></li>
+            <li><a href="#code-epta-heading">EPTA Data Download</a></li>
+            <li><a href="#code-core-heading">FastParam Core Repository</a></li>
           </ul>
         </li>
         <li><a href="#publications">Publications</a>
@@ -57,16 +58,12 @@
         </li>
         <li><a href="#licence-citation">Licence &amp; Citation</a>
           <ul>
-            <li><a href="#licence-datasets">Datasets — Licence &amp; how to cite</a></li>
             <li><a href="#licence-software">Software — Licence &amp; how to cite</a></li>
           </ul>
         </li>
-
       </ul>
     </nav>
-
     <div class="page-content">
-    
 
     <!-- Source Code -->
     <section id="code" aria-labelledby="code-heading">
@@ -89,7 +86,7 @@
       </article>
       
       <!-- FastParam Core Repository Article -->
-      <article class="repo" data-status="wip" aria-labelledby="code-core-heading">
+      <article class="repo" data-status="public" aria-labelledby="code-core-heading">
       <!-- Allowed values for data-status: private, public, wip, frozen, archived -->
         <div class="repo-head">
           <h3 id="code-core-heading" class="repo-title">FastParam Core Repository</h3>
@@ -127,46 +124,53 @@
       </nav>
 
       <!-- Articles -->
-      <section id="pub-articles" aria-labelledby="pub-articles-heading" class="pub-group" data-group="articles">
-        <h3 id="pub-articles-heading">Journal &amp; Conference Submissions</h3>
-        <ul class="pub-list">
-          <li class="pub-item" data-kind="articles" data-status="in-prep">
-            <div class="pub-head">
-              <span class="pub-title"><strong> Addressing prior dependence in hierarchical Bayesian modeling for PTA data analysis I: Methodology and implementation</strong></span>
-              <span class="pub-state" aria-label="Status: in review"></span>
-            </div>
-            <ul class="pub-meta">
-              <li><span class="label">Status:</span> In review</li>
-              <li><span class="label">Type:</span> Journal article</li>
-            </ul>
-            <p class="pub-links">
-              <a href="/resources/publications/articles/paper1_abstract.md">Abstract</a>
-              <span aria-hidden="true">·</span>
-              <a href="https://doi.org/10.48550/arXiv.2511.03667" aria-disabled="true">Preprint (coming soon)</a>
-            </p>
-            <details class="pub-more">
-              <summary>Show short note</summary>
-              <div class="pub-note">
-              Scope: NF-based hierarchical Bayesian inference for PTA analysis; improved statistical robustness &amp; computational efficiency.
-              </div>
-            </details>
-          </li>
-
-          <li class="pub-item" data-kind="articles" data-status="planned">
-            <div class="pub-head">
-              <span class="pub-title"><strong>Paper #2 (title TBC)</strong></span>
-              <span class="pub-state" aria-label="Status: planned"></span>
-            </div>
-            <ul class="pub-meta">
-              <li><span class="label">Status:</span> Planned submission</li>
-              <li><span class="label">Type:</span> Conference paper</li>
-            </ul>
-            <p class="pub-links">
-              <a href="/resources/publications/articles/paper2_outline.md">Outline</a>
-            </p>
-          </li>
-        </ul>
-      </section>
+     <section id="pub-articles" aria-labelledby="pub-articles-heading" class="pub-group" data-group="articles">
+  <h3 id="pub-articles-heading">Journal &amp; Conference Submissions</h3>
+  <ul class="pub-list">
+    <li class="pub-item" data-kind="articles" data-status="published">
+      <div class="pub-head">
+        <span class="pub-title"><strong>Addressing prior dependence in hierarchical Bayesian modeling for PTA data analysis I: Methodology and implementation</strong></span>
+        <span class="pub-state" aria-label="Status: in review"></span>
+      </div>
+      <ul class="pub-meta">
+        <li><span class="label">Status:</span> In review</li>
+        <li><span class="label">Type:</span> Journal article</li>
+      </ul>
+      <p class="pub-links">
+        <a href="/resources/publications/articles/paper1_abstract.md">Abstract</a>
+        <span aria-hidden="true">·</span>
+        <a href="https://doi.org/10.48550/arXiv.2511.03667" aria-disabled="true" target="_blank" rel="noopener">Preprint</a>
+      </p>
+      <details class="pub-more">
+        <summary>Show short note</summary>
+        <div class="pub-note">
+          Scope: NF-based hierarchical Bayesian inference for PTA analysis; improved statistical robustness &amp; computational efficiency.
+        </div>
+      </details>
+    </li>
+    <li class="pub-item" data-kind="articles" data-status="published">
+      <div class="pub-head">
+        <span class="pub-title"><strong>Addressing prior dependence in hierarchical Bayesian modeling for PTA data analysis II: Noise and SGWB inference through parameter decorrelation</strong></span>
+        <span class="pub-state" aria-label="Status: In review"></span>
+      </div>
+      <ul class="pub-meta">
+        <li><span class="label">Status:</span> In review</li>
+        <li><span class="label">Type:</span> Journal article</li>
+      </ul>
+      <p class="pub-links">
+        <a href="/resources/publications/articles/paper2_abstract.md">Abstract</a>
+        <span aria-hidden="true">·</span>
+        <a href="https://doi.org/10.48550/arXiv.2511.01959" aria-disabled="true" target="_blank" rel="noopener">Preprint</a>
+      </p>
+      <details class="pub-more">
+        <summary>Show short note</summary>
+        <div class="pub-note">
+          Scope: Application to pulsar noise modeling and SGWB detection using decorrelated hierarchical parameters.
+        </div>
+      </details>
+    </li>
+  </ul>
+</section>
 
       <!-- Diagrams & Technical Notes -->
       <section id="pub-diagrams" aria-labelledby="pub-diagrams-heading" class="pub-group" data-group="diagrams">
@@ -196,7 +200,7 @@
             <p class="muted">Preprocessing, training, and evaluation steps.</p>
           </li>
 
-          <li class="pub-item" data-kind="diagrams" data-status="wip">
+          <li class="pub-item" data-kind="diagrams" data-status="published">
             <div class="pub-head">
               <span class="pub-title"><a href="/resources/diagrams/generation_pipeline_note.md">Generative pipeline — short note</a></span>
               <span class="pub-state" aria-label="Status: work in progress"></span>
@@ -225,14 +229,14 @@
             <p class="muted">Brief description and selection criteria.</p>
           </li>
 
-          <li class="pub-item" data-kind="findings" data-status="wip">
+          <li class="pub-item" data-kind="findings" data-status="published">
             <div class="pub-head">
               <span class="pub-title"><a href="/resources/findings/benchmark_snapshot_v1.md">Benchmark snapshot — early metrics</a></span>
               <span class="pub-state" aria-label="Status: work in progress"></span>
             </div>
             <ul class="pub-meta">
               <li><span class="label">Theme:</span> Timing/quality</li>
-              <li><span class="label">Status:</span> WIP</li>
+              <li><span class="label">Status:</span> Public</li>
             </ul>
           </li>
         </ul>
