@@ -68,52 +68,46 @@
     <div class="page-content">
     
 
-
     <!-- Source Code -->
     <section id="code" aria-labelledby="code-heading">
       <h2 id="code-heading">Source Code</h2>
         <p class="fair-note">
-          <strong>Heads up:</strong> FAIR artefacts are being published in stages. Items marked “Coming soon” will appear in the next updates;
-          “External” links point to project-controlled sources (e.g., GitHub or a data catalogue) when appropriate.
+          <strong>Heads up:</strong> FAIR artefacts are being published in stages. Items marked "Coming soon" will appear in the next updates;
+          "External" links point to project-controlled sources (e.g., GitHub or a data catalogue) when appropriate. 
+          Followung you can visit the EPTA site where you can download the relative Data and source code, all the things for running your own experiments. They are under CC BY 4.0 and MIT License.
         </p>
-
+        
+      <!-- EPTA Data Download Article -->
+      <article class="repo" data-status="public" aria-labelledby="code-epta-heading">
+        <div class="repo-head">
+          <h3 id="code-epta-heading" class="repo-title">EPTA Data Download</h3>
+          <span class="repo-state" aria-live="polite"></span>
+        </div>
+        <p class="repo-actions">
+          <a class="btn" href="https://www.epta.eu.org/epta-dr2.html" target="_blank" rel="noopener">View on EPTA</a>
+        </p>
+      </article>
+      
+      <!-- FastParam Core Repository Article -->
       <article class="repo" data-status="wip" aria-labelledby="code-core-heading">
       <!-- Allowed values for data-status: private, public, wip, frozen, archived -->
         <div class="repo-head">
           <h3 id="code-core-heading" class="repo-title">FastParam Core Repository</h3>
           <span class="repo-state" aria-live="polite"></span>
         </div>
-
         <ul class="repo-meta">
           <li><span class="label">Languages:</span> Python (PyTorch), JAX (planned)</li>
           <li><span class="label">Licence:</span> MIT (TBC)</li>
           <li><span class="label">Visibility:</span> Private (opening soon)</li>
         </ul>
-
+        
+        <!-- Repository Actions -->
         <p class="repo-actions">
-          <!-- No links, just placeholder -->
-          <!--
-          <a class="btn" href="#" aria-disabled="true">View on GitHub (coming soon)</a>
-          <a class="btn btn-secondary" href="#" aria-disabled="true">Download ZIP</a>
-          -->
-          <!-- with links, just placeholder -->
-            <a class="btn" href="https://github.com/koexai/FastParam.git" target="_blank" rel="noopener">View on GitHub</a>
-            <a class="btn btn-secondary" href="https://github.com/koexai/FastParam/archive/refs/heads/main.zip">Download ZIP</a>
+          <a class="btn" href="https://github.com/koexai/FastParam.git" target="_blank" rel="noopener">View on GitHub</a>
+          <a class="btn btn-secondary" href="https://github.com/koexai/FastParam/archive/refs/heads/main.zip">Download ZIP</a>
         </p>
-
-        <!-- Once the repo is public you can: (1) remove this section (2) convert it to a Contents summary, with links to real folders/files in Github-->
-        <details class="repo-more">
-          <summary>Planned contents</summary>
-          <ul>
-            <li>Training &amp; evaluation scripts</li>
-            <li>Model architectures (physical + GenAI variants)</li>
-            <li>Data loaders and preprocessing utilities</li>
-            <li>Reproducible configs and example notebooks</li>
-          </ul>
-        </details>
       </article>
     </section>
-
 
     <!-- Publications -->
     <section id="publications" aria-labelledby="publications-heading">
@@ -285,6 +279,7 @@ Koexai. URL: https://astrai.koexai.com/resources/  Licence: CC BY 4.0.</pre>
     }</pre>
         <p class="muted">Tip: if a dataset provides its own <code>citation.txt</code> or DOI, please use that instead of the template above.</p>
       </section>
+      https://www.epta.eu.org/epta-dr2.html
       -->
       <!-- Software -->
       <section id="licence-software" aria-labelledby="licence-software-heading">
