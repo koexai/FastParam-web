@@ -810,7 +810,15 @@ body.resources-page #datasets .dataset.frame {
 }
 
 /* === Resource Hub — TOC (consolidated) === */
-body.resources-page .toc-panel { padding-left: .55rem; } /* tidy left gutter */
+/*body.resources-page .toc-panel { padding-left: .55rem; } /* tidy left gutter */
+body.resources-page .toc-panel { 
+  padding-left: .55rem; /* tidy left gutter */
+  position: sticky;
+  top: calc(var(--header-h) + 1rem); /* stick below the fixed header with some spacing */
+  align-self: flex-start; /* prevents stretching */
+  max-height: calc(100vh - var(--header-h) - 2rem); /* don't exceed viewport */
+  overflow-y: auto; /* allow scrolling if TOC is very long */
+}
 
 /* Reset list styles & logical indents */
 body.resources-page #toc ul,
