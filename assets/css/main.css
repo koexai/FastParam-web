@@ -810,15 +810,7 @@ body.resources-page #datasets .dataset.frame {
 }
 
 /* === Resource Hub — TOC (consolidated) === */
-/*body.resources-page .toc-panel { padding-left: .55rem; } /* tidy left gutter */
-.toc-panel {
-  position: sticky;
-  top: 2rem;
-  align-self: start; 
-  max-height: calc(100vh - 4rem);
-  overflow-y: auto; 
-}
-
+body.resources-page .toc-panel { padding-left: .55rem; } /* tidy left gutter */
 
 /* Reset list styles & logical indents */
 body.resources-page #toc ul,

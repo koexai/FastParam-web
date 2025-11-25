@@ -11,8 +11,6 @@
   const anchors = document.querySelectorAll('a[href^="#"]');
   anchors.forEach(a => {
     a.addEventListener('click', function (e) {
-      // Escludi i link del TOC che hanno un gestore specifico
-      if (this.closest('#toc')) return;
       if (this.classList.contains('show-options') || this.hasAttribute('data-no-smooth')) return;
 
       const href = this.getAttribute('href') || '';
@@ -691,36 +689,10 @@ window.addEventListener('DOMContentLoaded', function () {
       el.outerHTML = `
         <footer class="site-footer">
           <div class="container">
-            <p>© 2025 FastParam — Site by <a href="https://koexai.com" rel="external">Koexai srl</a></p>
+            <p>© 2025 ASTRAI — Site by <a href="https://koexai.com" rel="external">Koexai srl</a></p>
           </div>
         </footer>`;
     }
   });
 })();
 
-// Gestione scroll per i link del TOC
-document.addEventListener('DOMContentLoaded', function() {
-  const tocLinks = document.querySelectorAll('#toc a[href^="#"]');
-  
-  tocLinks.forEach(link => {
-    link.addEventListener('click', function(e) {
-      e.preventDefault();
-      const targetId = this.getAttribute('href').substring(1);
-      const targetElement = document.getElementById(targetId);
-      
-      if (targetElement) {
-        // Scroll alla posizione dell'elemento
-        const elementPosition = targetElement.getBoundingClientRect().top + window.pageYOffset;
-        const offsetPosition = elementPosition - 32; // 2rem di offset
-        
-        window.scrollTo({
-          top: offsetPosition,
-          behavior: 'smooth'
-        });
-        
-        // Aggiorna URL
-        history.pushState(null, null, '#' + targetId);
-      }
-    });
-  });
-});
